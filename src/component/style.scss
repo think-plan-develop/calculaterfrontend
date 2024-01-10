@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px;
+    padding: 50px;
+    .wrap{
+        min-width: 300px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 20px;
+        background-color: #d0ebf9;
+        .input_wrap{
+            border: 2px solid rgb(228, 227, 227);
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 4px;
+            .input_output{
+                width: 100%;
+               font-size: 40px;
+               font-weight: 600;
+               border: none;
+               outline: none;
+                background-color: transparent;
+            }
+            p{
+                font-size: 40px;
+                font-weight: 600;  
+            }
+        }
+        .btn_grid{
+            display: grid;
+            grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+            gap: 10px;
+           
+            .button_inp{
+                padding: 20px;
+                border: 1px solid #c7c7c7;
+                background-color: #fff;
+                border-radius: 4px;
+                transition: all 1s ease;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 600;
+                color: #000;
+                
+                &:hover{
+                    background-color: #000;
+                    color: #fff;
+
+                }
+            }
+            .color{
+                background-color: rgb(248, 211, 6);
+                color: #000;
+            }
+        }
+    }
+}
